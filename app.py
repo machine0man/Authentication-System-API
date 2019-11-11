@@ -57,6 +57,10 @@ def fresh_token_loader_callback():
     )
 
 
+@app.route("/")
+def heloo():
+    return "Balle Balle"
+
 api.add_resource(User, "/user/<int:user_id>")
 api.add_resource(UserRegister, "/register")
 api.add_resource(UserLogin, "/login")
